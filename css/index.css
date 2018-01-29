@@ -447,10 +447,14 @@
 	height: 440px;
 }
 .b_img li{
-	display: none;
+	position: absolute;
+	top:0;
+	left: 0;
+	opacity: 0;
+	transition:opacity 1s;
 }
 li.active{
-	display: block;
+	opacity: 1;
 }
 .b_img li a{
 	display: block;
@@ -527,7 +531,7 @@ li.active{
 	float: left;
 	margin-right: 12px;
 }
-.lunbodian li:first-child{
+.lunbodian .act{
 	background: #f09221;
 }
 .lunbodian li:last-child{
